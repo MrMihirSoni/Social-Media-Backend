@@ -1,6 +1,6 @@
 const postRouter = require("express").Router();
 
-const { allPosts, addPost, updatePost, deletePost } = require("../controllers/posts.controller");
+const { allPosts, addPost, updatePost, deletePost } = require("../controllers/posts.controllers");
 
 postRouter.get("/", allPosts);
 postRouter.post("/add", addPost);
